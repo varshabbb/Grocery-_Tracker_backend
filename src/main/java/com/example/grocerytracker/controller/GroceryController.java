@@ -4,6 +4,7 @@ import com.example.grocerytracker.service.GroceryService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@RestController
 @RequestMapping("/api/groceries")
 @CrossOrigin(origins = "http://localhost:3000")
 
