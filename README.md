@@ -1,87 +1,134 @@
+🛒 Grocery Tracker – Backend (Spring Boot)
 
----
+This is the backend part of the Grocery Tracker CRUD Application, developed using Spring Boot.
+It provides REST APIs to perform CRUD operations on grocery items and communicates with the frontend using JSON over HTTP.
 
-# 📁 BACKEND – `README.md`
+The backend is Dockerized and deployed on Render ☁️.
 
-```md
-# 🛒 Grocery Tracker – Backend (Spring Boot)
+🚀 Technologies Used
 
-This is the backend part of the **Grocery Tracker CRUD Application**, developed using **Spring Boot**.  
-It provides REST APIs to perform CRUD operations on grocery items and stores data in a database.
+Java 17
 
----
+Spring Boot 3.2.x
 
-## 🚀 Technologies Used
-- Java
-- Spring Boot
-- Spring Data JPA
-- H2 Database
-- Maven
+Spring Data JPA
 
----
+H2 Database
 
-## ✨ Features
-- Create grocery items
-- Read all grocery items
-- Update grocery items
-- Delete grocery items
-- RESTful API architecture
+Maven
 
----
+Docker
 
-## 📌 API Endpoints
+Render (Cloud Deployment)
 
-| Method | Endpoint | Description |
-|------|---------|-------------|
-| POST | `/api/groceries` | Add new grocery item |
-| GET | `/api/groceries` | Get all grocery items |
-| PUT | `/api/groceries/{id}` | Update grocery item |
-| DELETE | `/api/groceries/{id}` | Delete grocery item |
+✨ Features
 
----
+Create grocery items
 
-## ▶️ How to Run the Backend
+Read all grocery items
 
-1. Open the backend project in **IntelliJ IDEA**
-2. Make sure Java & Maven are installed
-3. Run the main class:
+Update grocery items
+
+Delete grocery items
+
+RESTful API architecture
+
+Docker containerization
+
+Cloud deployment using Render
+
+📌 API Endpoints
+Method	Endpoint	Description
+POST	/api/groceries	Add new grocery item
+GET	/api/groceries	Get all grocery items
+PUT	/api/groceries/{id}	Update grocery item
+DELETE	/api/groceries/{id}	Delete grocery item
+▶️ How to Run Backend (Local)
+1️⃣ Clone the repository
+git clone https://github.com/3BCA23SUCA32/grocery_tracker_backend.git
+cd grocery_tracker_backend
+
+2️⃣ Open in IntelliJ IDEA
+
+Open the project
+
+Make sure Java 17 is selected
+
+Maven dependencies will auto-download
+
+3️⃣ Run the application
+
+Run:
+
 GroceryApplication.java
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3887c4c2-50b0-46cd-9c41-d2db9b6d3533" />
 
-4. Backend will start at:
 
-
+4️⃣ Backend will start at
 http://localhost:8080
 
+🐳 Run Backend Using Docker
+1️⃣ Build Docker image
+docker build -t grocery-tracker-backend .
 
----
-
-## 🗄 Database
-- **H2 Database** (in-memory)
-- Automatically configured using Spring Boot
-- No manual setup required
-
----
-
-## 📂 Project Structure
+2️⃣ Run Docker container
+docker run -p 8080:8080 grocery-tracker-backend
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d1e91f8c-5620-4fe7-a76d-4e710ff667fb" />
 
 
+3️⃣ Backend URL
+http://localhost:8080/api/groceries
+
+🌐 Deployed Backend (Render)
+
+Production URL:
+
+https://<your-render-backend-url>/api/groceries
+
+
+The backend is deployed using:
+
+Docker
+
+Render Web Service
+
+Automatic build & deployment from GitHub
+
+🗄 Database
+
+H2 In-Memory Database
+
+Auto-configured by Spring Boot
+
+No external database required
+
+SONARQUBE:
+![WhatsApp Image 2026-02-07 at 4 57 03 PM (1)](https://github.com/user-attachments/assets/46e5c448-d851-4333-99cd-62fa74fb2290)
+
+
+
+📂 Project Structure
 src/main/java/com/example/grocerytracker/
 ├── controller/
 ├── service/
 ├── repository/
 ├── model/
 └── GroceryApplication.java
+![WhatsApp Image 2026-02-07 at 4 57 03 PM (2)](https://github.com/user-attachments/assets/edc8a771-820d-4f99-9edc-24f0d20434d4)
 
+🧠 Learning Outcome
 
----
+Spring Boot REST API development
 
-## 🧠 Learning Outcome
-- REST API development
-- CRUD operations using Spring Data JPA
-- Backend–frontend communication
+CRUD operations using Spring Data JPA
 
----
+Docker containerization
 
-## 👩‍💻 Developed By
-**Varsha**
-this is for pull out command
+Cloud deployment using Render
+
+Frontend–backend integration
+
+👩‍💻 Developed By
+
+Varsha Dhanvarsha B
+Grocery Tracker – Full Stack Project
